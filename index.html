@@ -93,47 +93,126 @@
 </body>
 </html>
 
-<!-- About Me Section -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    A unique combination of cybersecurity and data science skills, a strong commitment to self-learning, and a global perspective that allows me to approach problems with both technical precision and creative insight.
-  </p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Name -->
+    <div class="top-left">Your Name</div>
+    
+    <!-- Main Statement -->
+    <div class="center-text">
+      <p>
+        Technology is only as strong as the trust behind it. I aim to bridge the gap between innovation and security—so progress doesn’t come at the cost of safety.
+      </p>
+    </div>
+    
+    <!-- Left Links -->
+    <div class="bottom-left">
+      <a href="#projects">Projects</a><br>
+      <a href="#contact">About & Contact</a>
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="bottom-center">
+      <p>youremail@example.com</p>
+      <p>+1 234 567 8910</p>
+    </div>
+    
+    <!-- Description -->
+    <div class="bottom-right">
+      <p>
+        Currently pursuing a dual major in Computer & Data Science, complemented by certifications in key technical areas, 
+        I am building the expertise needed to grow into a leadership role that balances deep technical knowledge with strategic vision. 
+        Guided by a passion for leadership and innovation, I offer a unique combination of cybersecurity and data science skills, a strong commitment to self-learning, 
+        and a global perspective that allows me to approach problems with both technical precision and creative insight.
+      </p>
+    </div>
+  </div>
 
-<!-- CSS Styling -->
-<style>
-  /* About Me Section Styling */
-  #about {
-    background-color: #f9f9f9;   /* light gray background */
-    padding: 40px;
-    border-radius: 12px;
-    max-width: 800px;
-    margin: 40px auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    font-family: "Century Gothic", Arial, sans-serif;
-  }
+  <!-- CSS Styling -->
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-color: #111; /* dark background */
+      color: #222; 
+    }
 
-  #about h2 {
-    font-size: 28px;
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+    .container {
+      background-color: #f8f6f1; /* light beige background */
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 40px;
+    }
 
-  #about p {
-    font-size: 16px;
-    color: #444;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
+    /* Top-left name */
+    .top-left {
+      grid-column: 1 / 2;
+      font-weight: bold;
+      font-size: 16px;
+      align-self: start;
+    }
 
-  #about strong {
-    color: #3498db; /* makes highlights pop */
-  }
-</style>
+    /* Center statement */
+    .center-text {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      max-width: 500px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* Bottom-left navigation */
+    .bottom-left {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      align-self: end;
+      font-size: 14px;
+    }
+    .bottom-left a {
+      text-decoration: none;
+      color: #222;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .bottom-left a:hover {
+      text-decoration: underline;
+    }
+
+    /* Bottom-center contact */
+    .bottom-center {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      align-self: end;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* Bottom-right description */
+    .bottom-right {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      align-self: end;
+      font-size: 13px;
+      max-width: 250px;
+      text-align: justify;
+    }
+  </style>
+</body>
+</html>
+
 
 
 
