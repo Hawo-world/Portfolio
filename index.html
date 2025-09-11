@@ -97,19 +97,21 @@
       </p>
     </div>
     
-    <!-- Left Links -->
-    <div class="bottom-left">
-      <a href="#projects">Projects</a><br>
+    
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-left">
+      <a href="#projects">Projects</a><br>    <!-- Left Links -->
       <a href="#contact">About & Contact</a>
     </div>
     
     <!-- Contact Info -->
-    <div class="bottom-center">
+    <div class="footer-center">
       <p>hawo2507@colorado.edu</p>
     </div>
     
     <!-- Description -->
-    <div class="bottom-right">
+    <div class="footer-right">
       <p>
         Currently pursuing a dual major in Computer & Data Science, complemented by certifications in key technical areas, 
         I am building the expertise needed to grow into a leadership role that balances deep technical knowledge with strategic vision. 
@@ -118,6 +120,7 @@
       </p>
     </div>
   </div>
+</footer>
 
   <!-- CSS Styling -->
   <style>
@@ -156,43 +159,44 @@
       font-size: 20px;
       line-height: 1.6;
     }
+    /* Footer Styling */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: black;
+  padding: 20px 50px;
+  color: white;
+  font-size: 12px;
+}
 
-    /* Bottom-left navigation */
-    .bottom-left {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-      align-self: end;
-      font-size: 10px;
-    }
-    .bottom-left a {
-      text-decoration: none;
-      color: white;
-      display: block;
-      margin-bottom: 10px;
-    }
-    .bottom-left a:hover {
-      text-decoration: underline;
-    }
+/* Left links */
+.footer-left a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.footer-left a:hover {
+  text-decoration: underline;
+}
 
-    /* Bottom-center contact */
-    .bottom-center {
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
-      align-self: end;
-      text-align: center;
-      font-size: 10px;
-      line-height: 1.5;
-    }
+/* Center */
+.footer-center {
+  text-align: center;
+  flex: 1;
+  font-size: 12px;
+}
 
-    /* Bottom-right description */
-    .bottom-right {
-      grid-column: 3 / 4;
-      grid-row: 3 / 4;
-      align-self: end;
-      font-size: 10px !important;
-      line-height: 1.6;
-      max-width: 350px;
-      text-align: justify;
+/* Right description */
+.footer-right {
+  max-width: 350px;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
     }
   </style>
 </body>
