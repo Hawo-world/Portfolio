@@ -89,7 +89,9 @@
     <!-- Main container -->
   <div class="container">
     <!-- Name -->
-    <div class="top-left">Harmony W. | Threat Intelligence </div>
+    <div class="top-left">
+      Harmony W. | <span class="subtitle">Threat Intelligence</span>
+    </div>
     
     <!-- Main Statement -->
     <div class="center-text">
@@ -138,7 +140,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto 1fr auto;
-      padding: 100px 20px 200px 20px; /* top right bottom left */
+      padding: 100px 60px 200px 60px; /* top right bottom left */
     }
 
     /* Top-left name */
@@ -148,6 +150,10 @@
       font-size: 15px;
       align-self: start;
     }
+    .subtitle {
+  font-weight: normal; /* remove bold */
+  font-style: italic;  /* optional: give it some contrast */
+}
 
     /* Center statement */
     .center-text p {
@@ -166,7 +172,7 @@
   justify-content: space-between;
   align-items: flex-start;
   background-color: black;
-  padding: 10px 40px;
+  padding: 20px 60px;
   color: white;
 }
 
