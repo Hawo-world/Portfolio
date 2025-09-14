@@ -143,19 +143,20 @@
   font-weight: normal; 
   font-style: italic;  
 }
-
+    .center-text {
+      background-color:black;
+      padding: 60px 100px 20px;
+      text-align: center;
+      margin-bottom: 0px;
+    }
     /* Center statement */
     .center-text p {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      align-self: center;
-      justify-self: center;
-      max-width: 450px;
-      text-align: center;
-      font-size: 20px;
-      line-height: 1.8;
-      background-color: black;
-      padding: 200px 300px 200px 300px; /* top right bottom left */
+  max-width: 450px;
+  margin: 0 auto;        
+  font-size: 20px;
+  line-height: 1.8;
+  background-color: transparent; 
+  padding: 0;            
     }
     /* Footer Styling */
 .footer {
@@ -164,6 +165,7 @@
   align-items: flex-start;
   background-color: black;
   padding: 10px 100px 80px;
+  margin-top: 0px;
   color: white;
 }
 
