@@ -90,6 +90,7 @@
     
     <!-- Main Statement -->
     <div class="center-text">
+      <h2 class="main-headline">Welcome to My Portfolio</h2>
       <p>
         Technology is only as strong as the trust behind it. I aim to bridge the gap between innovation and security—so progress doesn’t come at the cost of safety.
       </p>
@@ -143,11 +144,22 @@
   font-weight: normal; 
   font-style: italic;  
 }
+    /* Headline in top right */
+.main-headline {
+  position: absolute;
+  top: 20px;   
+  right: 30px; 
+  font-size: 18px;
+  font-weight: bold;
+  color: white; 
+  margin: 0;
+}
     .center-text {
       background-color:black;
       padding: 140px 100px 90px; /* top right bottom left */
       text-align: center;
       margin-bottom: 0px;
+      position: relative;
     }
     /* Center statement */
     .center-text p {
@@ -191,9 +203,9 @@
 
 /* Right 'about me' */
 .footer-right p {
-  max-width: 450px;
+  max-width: 500px;
   text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.8;
 }
 
