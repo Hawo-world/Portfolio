@@ -27,7 +27,7 @@
     /* Navigation Header */
     .header {
       background-color: black;
-      padding: 10px;
+      padding: 25px;
       overflow: hidden;
     }
 
@@ -100,6 +100,7 @@
     
   <!-- Footer Section -->
   <footer class="footer">
+    <div class="footer-content">
     <div class="footer-left">
       <a href="#projects">Projects</a><br>    <!-- Left Links -->
       <a href="#contact">About & Contact</a>
@@ -118,6 +119,7 @@
         Guided by a passion for leadership and innovation, I offer a unique combination of cybersecurity and data science skills, a strong commitment to education, 
         and a global perspective that allows me to approach problems with both technical precision and creative insight.
       </p>
+      </div>
     </div>
   </footer>
 
@@ -155,11 +157,12 @@
   font-weight: 700;
   color: #161616; 
   margin: 0;
-  font-family: 'Red Hat Display', sans-serif; 
+  font-family: 'Red Hat Display', sans-serif;
+  
 }
     .center-text {
       background-color:black;
-      padding: 220px 100px 250px; /* top right bottom left */
+      padding: 250px 100px 250px; /* top right bottom left */
       text-align: center;
       margin-bottom: 0px;
       position: relative; 
@@ -175,19 +178,26 @@
   font-family: 'Red Hat Display', sans-serif; 
     }
     /* Footer Styling */
+/* Footer gradient background */
 .footer {
+  background: linear-gradient(to top, #5DD62C, black);
+  padding: 40px 0; /* controls top/bottom spacing */
+  color: white;
+}
+
+/* Black content box with one border */
+.footer-content {
+  background-color: black;
+  border: 2px solid black;
+  padding: 20px 40px;
+  width: 100%; /* stretches across */
+  max-width: 1200px; /* optional: keeps from being too wide on huge screens */
+  margin: 0 auto; /* centers the black box */
+  
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 120px;
   align-items: flex-start;
-  background: linear-gradient(to top, #5DD62C, black);
-  padding: 60px 100px 40px;
-  margin-top: 0px;
-  color: #f4f4f4;
- 
-    /* Black box around everything */
-  border: 2px solid black;      
-  background-clip: padding-box; 
 }
 
 /* Left links */
