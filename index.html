@@ -89,13 +89,17 @@
                                           <!-- Main container -->
     
     <!-- Main Statement -->
-    <div class="center-text">
-      <h2 class="main-headline">Threat Intelligence</h2>
-      <p>
-        Technology is only as strong as the trust behind it. I aim to bridge the gap between innovation and security—so progress doesn’t come at the cost of safety.
-      </p>
-    </div>
+    <section class="hero">
+  <div class="hero-content">
+    <h1>
+      Threat <br>
+      Intelligence
+    </h1>
+    <p class="hero-subtext">
+      Specialized in Cybersecurity, Data Science, and Strategic Analysis
+    </p>
   </div>
+</section>
     
     
   <!-- Footer Section -->
@@ -124,6 +128,8 @@
   </footer>
 
   <!-- CSS Styling -->
+
+  
   <style>
     body {
       margin: 0;
@@ -147,17 +153,36 @@
   font-style: italic;  
 }
     /* Headline in top left */
-.main-headline {
-  position: absolute;
-  top: 20px;   
-  left: 0;
+.hero {
+  background-color: black; /* keep consistent with your site */
+  color: white;
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1200px;
   width: 100%;
-  text-align: center;
-  font-size: 145px;
-  font-weight: 700;
-  color: #161616; 
-  margin: 0;
+}
+
+.hero h1 {
   font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;     /* super bold */
+  font-size: 8vw;       /* scales with screen size */
+  line-height: 0.9;     /* tight spacing between “Threat” and “Intelligence” */
+  margin: 0;
+  text-align: left;     /* aligned like your reference */
+}
+
+.hero-subtext {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: right;    /* small text aligned bottom-right */
+  max-width: 400px;
+  margin-left: auto;    /* pushes it to the right */
   
 }
     .center-text {
