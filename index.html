@@ -118,14 +118,29 @@
   
   <section id="about" class="about-section">
   <div class="about-content">
-  
-    <!-- About Heading & Text -->
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Technology is only as strong as the trust behind it— I aim to bridge the gap between innovation and security, so progress doesn’t come at the cost of safety.
-      </p>
+
+
+    <!-- About Me Top Row -->
+    <div class="about-top">
+      <h2 class="about-title">About Me</h2>
+      <a href="#home" class="about-logo">🏠</a> 
     </div>
+    
+
+    <!-- About Me Header -->
+    <div class="about-header">
+      <h1>
+        Technology is only as strong as the trust behind it.  
+        I aim to bridge the gap between innovation and security—so progress doesn’t come at the cost of safety.
+      </h1>
+    </div>
+
+    <!-- About Me Bottom Row 3 Columns -->
+    <div class="about-bottom">
+      <div class="about-left">
+        <a href="#projects">Projects</a><br>
+        <a href="#contact">About & Contact</a>
+      </div>
 
     <!-- Left Links -->
     <div class="about-left">
@@ -230,16 +245,58 @@
   font-family: 'Glacial Indifference', sans-serif;
     }
     
-    /* About Styling */
+    /* About Section Styling */
 
 .about-section {
   background: #080808;
-  padding: 40px ; 
+  padding: 60px 40px;
   color: #e0e0e0;
+}
+
+    /* About title & home button */
+    .about-top {
+  display: flex;                  
+  justify-content: space-between; /* Spread left and right */
+  align-items: center;
+  margin-bottom: 60px;            
+}
+    .about-title {
+  font-size: 1.5rem;
+  font-weight: 600; 
+}
+    .about-logo {
+  text-decoration: none;
+  font-size: 1.5rem; 
+  color: #e0e0e0;
+}
+    /* Hover effect */
+.about-logo:hover {
+  opacity: 0.7; 
+}
+    /* Main header statement (centered big text) */
+.about-header {
+  max-width: 900px;    /* Control line length */
+  margin: 0 auto 80px; /* Center horizontally */
+  text-align: center;
+}
+.about-header h1 {
+  font-size: 1.8rem;  
+  font-weight: 400;    
+  line-height: 1.6;
+  letter-spacing: 0.5px; /* Looser spacing */
+}
+
+/* 🔹 Bottom row with 3 sections */
+.about-bottom {
   display: flex;
-  justify-content: center;
-  gap: 120px;
+  justify-content: space-between;
+  gap: 40px; /* Space between columns */
   align-items: flex-start;
+}
+
+/* 🔹 Each of the 3 sections */
+.about-left, .about-center, .about-right {
+  flex: 1; /* Equal column widths */
 }
 
 /* Left links */
@@ -257,18 +314,26 @@
 /* Center */
 .about-center p {
   text-align: center;
-  flex: 1;
-  font-size: 12px;
+  font-size: 0.85rem;
   font-family: 'Glacial Indifference', sans-serif;
 }
 
 /* Right 'about me' */
 .about-right p {
-  max-width: 500px;
   text-align: justify;
-  font-size: 12px;
-  line-height: 1.8;
+  font-size: 0.9rem;
+  line-height: 1.6;
   font-family: 'Glacial Indifference', sans-serif;
+}
+
+    /* Customization placeholder: */
+.about-title,
+.about-logo,
+.about-header h1,
+.about-left a,
+.about-center p,
+.about-right p {
+  /* Override font-family, font-weight, padding, margin, etc. */
 }
 
     }
