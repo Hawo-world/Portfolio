@@ -29,12 +29,13 @@
     .header {
       background-color: #080808;
       padding: 25px;
-      overflow: hidden;
+      display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     .header a {
+      text-decoration: none;
       float: left;
       padding: 9px;
       text-decoration: none;
@@ -46,7 +47,9 @@
     .header a.logo {
       font-family: 'Glacial Indifference', sans-serif;
       font-size: 16px;
-      font-weight: regular;
+      font-weight: normal;
+
+      margin-right: auto;
     }
 
     .header a:hover {
@@ -62,7 +65,7 @@
 
     .header-right {
       flex: 1;
-      float: right;
+      display: flex;
       justify-content: center;
       gap: 30px;
       
@@ -70,16 +73,17 @@
 
     /* Mobile-friendly */
     @media screen and (max-width: 500px) {
-      .header a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
+      .header {
+    flex-direction: column; 
+  }
 
       .header-right {
-        float: none;
-      }
+    flex-direction: column; 
+    gap: 10px;
+  }
     }
+
+  
   </style>
 </head>
 
