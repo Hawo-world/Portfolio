@@ -25,17 +25,14 @@
       margin: 0;
       background-color: #080808;
     }
-
     h1 {
       color: #e0e0e0;
       margin: 20px;
     }
-
     p {
       font-size: 18px;
       margin: 20px;
     }
-
     /* Navigation Header */
     .header {
       background-color: #080808;
@@ -44,14 +41,12 @@
       align-items: center;
       justify-content: flex-start;
       gap: 40px;
-
       position: fixed;   
       top: 0;            
       left: 0;
       width: 100%;       
       z-index: 1000;     
     }
-
     .header a {
       text-decoration: none;
       float: center;
@@ -61,51 +56,43 @@
       color: #e0e0e0;
       border-radius: 100px;
     }
-
     .header a.logo {
       font-family: "TH Sarabun New", sans-serif;
       font-size: 16px;
       font-weight: normal;
       margin-right: 490px;
     }
-
-    .header a:hover {
+   .header a:hover {
       background-color: white;
-      color: black;
-      
+      color: black;  
     }
-
     .header a.active {
       background-color: #e0e0e0;
       color: #080808;
     }
-
     .header-right {
       flex: none;
       display: flex;
       justify-content: center;
       gap: 30px;
-      
     }
-
-    /* Mobile-friendly */
+    /* Mobile-friendly header*/
     @media screen and (max-width: 500px) {
       .header {
     flex-direction: column; 
   }
-
       .header-right {
     flex-direction: column; 
     gap: 10px;
   }
     }
-
-  
   </style>
 </head>
 
+
+
+<!-- BODY header section -->  
 <body>
-                                          <!-- Header Section -->
   <div class="header">
     <a href="#" class="logo"> Harmony W. </a>
     <div class="header-right">
@@ -115,9 +102,9 @@
     </div>
   </div>
 
-                                          <!-- Main container -->
+                                          
     
-    <!-- Main Statement -->
+    <!--(main container) Home Page -->
     <section class="hero">
   <div class="hero-content">
     <h1>
@@ -130,20 +117,16 @@
   </div>
 </section>
 
-<!-- About Me Section -->
   
+  <!-- (HTML) About Me Page -->
   <section id="about" class="about-section">
   <div class="about-content">
 
-
-    <!-- About Me Top Row -->
     <div class="about-top">
       <h2 class="about-title">About Me</h2>
       <a href="#home" class="about-logo">🏠</a> 
     </div>
     
-
-    <!-- About Me Header -->
     <div class="about-header">
       <h1>
         Technology is only as strong as the trust behind it.  
@@ -154,7 +137,6 @@
     <!-- About Me Bottom Row 3 Columns -->
     <div class="about-bottom">
       
-    <!-- Left Links -->
     <div class="about-left">
       <a href="#projects">Projects</a><br>
     </div>
@@ -166,7 +148,6 @@
       <a href="#Linked-In">Linked-In</a>    
     </div>
 
-    <!-- About Me Statement -->
     <div class="about-right">
       <p>
         Currently pursuing a dual major in Computer & Data Science complemented by certifications in key technical areas, 
@@ -178,8 +159,9 @@
   </div>
 </section>
 
+  
+  
   <!-- CSS Styling -->
-
   
   <style>
     body {
@@ -189,8 +171,7 @@
       color: #f4f4f4;
       padding-top: 150px;
     }
-
-    .container {
+    .container { /* main-general */
       background-color: #080808; 
       min-height: auto;
       display: grid;
@@ -198,12 +179,12 @@
       grid-template-rows: auto 1fr auto;
       padding: 20px; /* top right bottom left */
       margin-bottom: 0;
- 
     }
     .subtitle {
   font-weight: normal;  
 }
-    /* Headline */
+    
+    /* homepage body Headline */
 .hero {
   background-color: #080808; 
   color: #e0e0e0;
@@ -213,14 +194,12 @@
   text-align: center;
   padding-top: 300px;
 }
-
 .hero-content {
   display: flex;
   flex-direction: column;    
   gap: 30px;                 
   max-width: 900px;   
 }
-
 .hero h1 {
   font-family: "TH Sarabun New", sans-serif; 
   font-size: 4.1vw;          
@@ -231,7 +210,8 @@
   letter-spacing: 4px;
 }
 
-    /* Center statement */
+    
+    /* homepage subtext */
 .hero-subtext {
   font-size: 2.2rem;
   line-height: 1.6;
@@ -239,7 +219,6 @@
   margin: 0px;    
   
 }
-    /* Center statement */
     .center-text {
       background-color: #080808;
       padding: 150px 700px 200px; /* top right bottom left */
@@ -247,7 +226,6 @@
       margin-bottom: 0px;
       position: relative; 
     }
-    /* Center statement */
     .center-text p {
   max-width: 600px;
   margin: 0 auto;        
@@ -258,18 +236,18 @@
   font-family: "TH Sarabun New", sans-serif;
     }
     
-    /* About Section Styling */
-
+    
+/* About Page  CSS */
 .about-section {
   background: #080808;
   padding: 60px 40px;
   color: #e0e0e0;
 }
 
-    /* About title & home button */
+    /* About page title & home button */
     .about-top {
   display: flex;                  
-  justify-content: space-between; /* Spread left and right */
+  justify-content: space-between; 
   align-items: center;
   margin-bottom: 70px;            
 }
@@ -286,10 +264,11 @@
 .about-logo:hover {
   opacity: 0.7; 
 }
-    /* Main header statement */
+    
+/* about page headline */
 .about-header {
   max-width: 500px;    
-  margin: 0 auto 80px; /* Center horizontally */
+  margin: 0 auto 80px; 
   text-align: center;
 }
 .about-header h1 {
@@ -299,20 +278,19 @@
   letter-spacing: 0.4px; 
 }
 
-/* 🔹 Bottom row with 3 sections */
+/* Bottom row with 3 sections */
 .about-bottom {
   display: flex;
   justify-content: space-between;
   gap: 25px; /* Space between columns */
   align-items: flex-start;
 }
-
-/* 🔹 Each of the 3 sections */
+/* Each of the 3 sections */
 .about-left, .about-center, .about-right {
   flex: 1; /* Equal column widths */
 }
 
-/* Left links */
+    /* Left links */
 .about-left a {
   margin-left: 120px;
   text-decoration: none;
@@ -325,12 +303,12 @@
   text-decoration: underline;
 }
 
-/* Center contact info */
+    /* Center contact info */
 .about-center {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* center align horizontally */
-  gap: 8px;              /* space between items */
+  align-items: center;   
+  gap: 8px;              
   font-size: 0.85rem;
 }
 .about-center a {
